@@ -3,12 +3,14 @@ import java.awt.geom.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class lives extends JPanel{
+public class lives extends JPanel
+{
       int miss[];
       Graphics2D g;
-      
+
       int w,h;
-      public lives(int width,int height) {
+      public lives(int width,int height) 
+      {
             w = width;
             h = height;
             miss = new int[4];
@@ -18,7 +20,8 @@ public class lives extends JPanel{
             miss[3] = 0;                  //left
       }
 
-      public void paintComponent(Graphics g1) {
+      public void paintComponent(Graphics g1) 
+      {
       	super.paintComponent(g1);
       	g = (Graphics2D) g1.create();
       	g.setStroke(new BasicStroke(2.0f));
@@ -44,7 +47,8 @@ public class lives extends JPanel{
       }
 
       /*Setting central segment red in case of a miss*/
-      public void setMiss(int player) {                           //Player0 - top, Player1 - right, Player2 - bottom, Player3 - left
+      public void setMiss(int player) 
+      {                           //Player0 - top, Player1 - right, Player2 - bottom, Player3 - left
 
             miss[player] += 1;
             if (miss[player] == 4) {
@@ -91,6 +95,7 @@ public class lives extends JPanel{
                               g.fill(new Arc2D.Double((w+255), (h+255), 90, 90, 45, 90, Arc2D.PIE));     //top
                               break;
                   case 2:     //outer circle - r = 75
+                  
                               g.setColor(Color.BLACK);
                               g.draw(new Arc2D.Double((w+225), (h+225), 150, 150, 45, 90, Arc2D.PIE));     //top
                               g.setColor(new Color(255,230,179));

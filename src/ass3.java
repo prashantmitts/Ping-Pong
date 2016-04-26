@@ -356,15 +356,13 @@ public class ass3 {
 
 
 
-      
-
-      
+   
       // input.add(levels,BorderLayout.NORTH);///
       // input.add(buttons,BorderLayout.CENTER);///
       // input.add(start_game,BorderLayout.SOUTH);////
 
 
-      
+
       JButton gametitle = new JButton("Ping Pong Game");
       gametitle.setFocusable(false);
       gametitle.setForeground (new Color(51,102,153));

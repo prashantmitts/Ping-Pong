@@ -3,9 +3,8 @@ import java.awt.*;
 import java.awt.geom.*;
 import java.awt.event.*;
 
-public class ball extends JPanel  {
-	
-
+public class ball extends JPanel  
+{
 	double x ,y ,velx = Math.sqrt(457.96),vely = 0;
 	//velx = -21.4 + 42.8 * Math.random(),vely = ((2 * (int)(2 * Math.random()))-1) * Math.sqrt(457.96 - velx * velx);
 	int w,h;
@@ -15,6 +14,7 @@ public class ball extends JPanel  {
 		x = w*1.0 + 285;
 		y = h*1.0 + 285;
 	}
+
 	
 	public void paintComponent(Graphics g1) {
 		super.paintComponent(g1);
@@ -33,8 +33,6 @@ public class ball extends JPanel  {
 	    g.setColor(new Color(191,191,191));
 	    g.fill(new Ellipse2D.Double(x, y, 30, 30));    
 	}
-
-	
 
 	
 }

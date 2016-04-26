@@ -11,7 +11,6 @@ public class board extends JPanel{
             h = (height-600)/2;
             
       }
-
 	public void paintComponent(Graphics g1) {            
       super.paintComponent(g1);
       Graphics2D g = (Graphics2D) g1.create();
@@ -29,7 +28,6 @@ public class board extends JPanel{
       g.fill3DRect(w,575+h,25,25,true);
       g.fill3DRect(575+w,575+h,25,25,true);
 
-      
       //marking territories
       g.setStroke(new BasicStroke(1.0f));
       double x = 300 - 75/Math.sqrt(2);
